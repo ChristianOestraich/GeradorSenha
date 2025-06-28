@@ -1,10 +1,9 @@
-# 🔐 Gerador de Senhas Seguras
+````````````# 🔐 Secure Password Generator
 
-Este projeto é uma API REST desenvolvida com **Spring Boot 3** que gera senhas seguras de forma simples e personalizável. Ideal para sistemas que exigem autenticação segura ou cadastro de novos usuários com senhas fortes.
-
+This project is a REST API built with Spring Boot 3 that generates secure passwords in a simple and customizable way. Ideal for systems that require secure authentication or registration of new users with strong passwords.
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 - Java 17
 - Spring Boot 3.5.3
@@ -16,28 +15,28 @@ Este projeto é uma API REST desenvolvida com **Spring Boot 3** que gera senhas 
 
 ---
 
-## 📦 Como rodar o projeto
+## 📦 How to Run the Project
 
-1. **Clone o repositório:**
+1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/seu-usuario/gerador-senhas.git
    cd gerador-senhas
    ```
 
-2. **Compile o projeto:**
+2. **Build the project:**
 
    ```bash
    ./mvnw clean package
    ```
 
-3. **Execute a aplicação:**
+3. **Run the application:**
 
    ```bash
    ./mvnw spring-boot:run
    ```
 
-4. A API estará disponível em:
+4. The API will be available at:
 
    ```
    http://localhost:8080
@@ -45,15 +44,15 @@ Este projeto é uma API REST desenvolvida com **Spring Boot 3** que gera senhas 
 
 ---
 
-## 📚 Documentação Swagger
+## 📚 Swagger Documentation
 
-Você pode acessar a interface interativa do Swagger UI aqui:
+You can access the interactive Swagger UI interface here:
 
 ```
 http://localhost:8080/swagger-ui.html
 ```
 
-Ou diretamente:
+Or directly:
 
 ```
 http://localhost:8080/swagger-ui/index.html
@@ -61,25 +60,25 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
-## 🔄 Endpoint Principal
+## 🔄 Main Endpoint
 
 ### `GET /gerar-senha`
 
-Gera uma nova senha segura com o comprimento informado (padrão: 12).
+Generates a new secure password with the specified length (default: 12).
 
-#### Parâmetros:
+#### Parameters:
 
-| Nome   | Tipo | Obrigatório | Descrição               |
-| ------ | ---- | ----------- | ----------------------- |
-| length | int  | Não         | Tamanho da senha gerada |
+| Name   | Type | Required    | Description            |
+| ------ | ---- | ----------- | -----------------------|
+| length | int  | No          | Length of the password |
 
-#### Exemplo de requisição:
+#### Example Request:
 
 ```
 GET http://localhost:8080/gerar-senha?length=16
 ```
 
-#### Exemplo de resposta:
+#### Example Response:
 
 ```json
 {
@@ -89,26 +88,26 @@ GET http://localhost:8080/gerar-senha?length=16
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 projeto.geradorsenhas
-├── adapter.in.controller         # Controllers da API
-├── application.dto               # DTOs usados nas respostas
-├── infrastructure.config         # Configurações do projeto (Swagger)
-├── service                       # Lógica de geração de senha
-└── GeradorSenhasApplication      # Classe principal da aplicação
+├── adapter.in.controller         # API Controllers
+├── application.dto               # DTOs used in responses
+├── infrastructure.config         # Project configurations (Swagger)
+├── service                       # Password generation logic
+└── GeradorSenhasApplication      # Main application class
+
 ```
 
 ---
 
-## ✨ Contribuições
+## ✨ Contributions
 
-Sinta-se à vontade para abrir issues, enviar PRs ou sugerir melhorias!
+Feel free to open issues, submit PRs, or suggest improvements!
 
 ---
 
-## 📝 Licença
+## 📝 License
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
-
