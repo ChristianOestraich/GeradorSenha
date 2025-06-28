@@ -1,6 +1,7 @@
-````````````# 🔐 Secure Password Generator
+# 🔐 Secure Password Generator
 
-This project is a REST API built with Spring Boot 3 that generates secure passwords in a simple and customizable way. Ideal for systems that require secure authentication or registration of new users with strong passwords.
+This project is a REST API developed with **Spring Boot 3** that generates secure, customizable passwords in a simple way. Ideal for systems that require strong authentication or user registration with robust passwords.
+
 ---
 
 ## 🚀 Technologies Used
@@ -20,7 +21,7 @@ This project is a REST API built with Spring Boot 3 that generates secure passwo
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/seu-usuario/gerador-senhas.git
+   git clone https://github.com/your-username/gerador-senhas.git
    cd gerador-senhas
    ```
 
@@ -46,7 +47,7 @@ This project is a REST API built with Spring Boot 3 that generates secure passwo
 
 ## 📚 Swagger Documentation
 
-You can access the interactive Swagger UI interface here:
+You can access the interactive Swagger UI at:
 
 ```
 http://localhost:8080/swagger-ui.html
@@ -68,17 +69,17 @@ Generates a new secure password with the specified length (default: 12).
 
 #### Parameters:
 
-| Name   | Type | Required    | Description            |
-| ------ | ---- | ----------- | -----------------------|
-| length | int  | No          | Length of the password |
+| Name   | Type | Required | Description             |
+| ------ | ---- | -------- | ----------------------- |
+| length | int  | No       | Desired password length |
 
-#### Example Request:
+#### Request Example:
 
 ```
 GET http://localhost:8080/gerar-senha?length=16
 ```
 
-#### Example Response:
+#### Response Example:
 
 ```json
 {
@@ -94,20 +95,19 @@ GET http://localhost:8080/gerar-senha?length=16
 projeto.geradorsenhas
 ├── adapter.in.controller         # API Controllers
 ├── application.dto               # DTOs used in responses
-├── infrastructure.config         # Project configurations (Swagger)
+├── infrastructure.config         # Project configuration (Swagger)
 ├── service                       # Password generation logic
 └── GeradorSenhasApplication      # Main application class
-
 ```
 
 ---
 
 ## ✨ Contributions
 
-Feel free to open issues, submit PRs, or suggest improvements!
+Feel free to open issues, submit pull requests, or suggest improvements!
 
 ---
 
 ## 📝 License
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
